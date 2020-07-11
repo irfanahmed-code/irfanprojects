@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+background-color: blueviolet;
+    text-align: center;
+    }
+h1{
+    color:black;
+    display: inline-block;
+    width: 1000px;
+    height: 100px;
+    background-color:cornsilk;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size:100px ;
+}
+
+h2{
+    color:black;
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    background-color: cornsilk;
+    align-items: center;
+    font-size:100px ;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+button
+{
+    width: 200PX;
+    height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+}
+</style>
+
+
+<body>
+    <div>
+        <h1>
+            STOP WATCH
+        </h1>
+
+    </div>
+    <div>
+<h2 id="min">0</h2>
+<h2 id="sec">0</h2>
+<h2 id="msec">0</h2>
+</div>
+
+<div>
+    <button id="S" onclick="start(),disableBtn()">Start</button>
+    <button onclick="stop()">Pause</button>
+    <button id="R" onclick="reset(),enableBtn()" >Reset</button>
+</div>
+
+
+    <script src="app.js">
+function f1()
+{
+    document.all.myButton.disabled = true;
+}
+function f2()
+{
+    document.all.myButton.disabled = false;
+}
+
+    </script>
+    
+</body>
+</html>
